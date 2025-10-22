@@ -1,6 +1,106 @@
-# gitignore template for LangChain products, e.g., LangGraph, LangSmith
-# website: https://www.langchain.com/
-# website: https://www.langchain.com/langgraph
+# -------------------------------------------------------------
+# LangChain / LangGraph / LangSmith .gitignore
+# Website: https://www.langchain.com/
+# Website: https://www.langchain.com/langgraph
+# -------------------------------------------------------------
 
-# LangGraph
+# LangGraph API data and configuration
 .langgraph_api/
+.langgraph_api/*
+
+# LangChain-specific cache or API files
+.langchain_cache/
+.langchain_temp/
+.langsmith_logs/
+
+# -------------------------------------------------------------
+# Standard Python ignores
+# -------------------------------------------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code / PyCharm
+.vscode/
+.idea/
+
+# Local databases or API keys
+*.db
+*.sqlite3
+.env.local
+.env.*
+secrets.json
+credentials.json
+
+# Logs and temp files
+*.log
+tmp/
+temp/
+logs/
+
+# macOS / Windows artifacts
+.DS_Store
+Thumbs.db
